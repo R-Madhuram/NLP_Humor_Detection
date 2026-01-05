@@ -38,23 +38,23 @@ This humor detection capability can be embedded into production systems such as:
 
 In practice, this model would operate upstream of sentiment analysis, recommendation ranking, or AI response generation.
 
-## Models & Metrics (What Was Tested and Why)
+## 3️⃣ Models & Metrics (What Was Tested and Why)
 
-### 3️⃣ Models Evaluated
+### Models Evaluated
 
 Three commonly deployed NLP classifiers were tested:
 
-* 1. Logistic Regression — strong linear baseline, scalable, easy to interpret
+1. Logistic Regression — strong linear baseline, scalable, easy to interpret
 
-* 2. Decision Tree — rule-based model, useful for interpretability comparisons
+2. Decision Tree — rule-based model, useful for interpretability comparisons
 
-* 3. Naive Bayes — probabilistic baseline commonly used in text classification
+3. Naive Bayes — probabilistic baseline commonly used in text classification
 
 Each model was evaluated under 12 configurations, combining:
 
-* 1. Stemming vs. Lemmatization
+1. Stemming vs. Lemmatization
 
-* 2. Count Vectorization vs. TF-IDF
+2. Count Vectorization vs. TF-IDF
 
 Hyperparameter tuning via grid search
 
@@ -78,16 +78,17 @@ The chart above summarizes accuracy across 12 NLP pipelines combining
 *  2 vectorization methods (Count Vectorizer vs. TF-IDF)
 
 Logistic Regression consistently outperformed Decision Trees and Naive Bayes, achieving close to 90% accuracy across all configurations.
-Logistic Regression Is the Clear Winner
-
-### ➡️ Business translation:
-A simple, scalable model performs best — ideal for production systems.
+Logistic Regression Is the Clear Winner! 
 
 Lemmatization provided an incremental but consistent improvement over stemming across most pipelines and Count Vectorization slightly outperformed TF-IDF in peak accuracy that suggests humor detection relies on word presence more than rarity. 
 
+
 ### ➡️ Business translation:
-Simpler representations can outperform more complex weighting schemes and Small preprocessing decisions can meaningfully improve downstream accuracy
-These results highlight that preprocessing and representation choices had a greater impact on performance than increasing model complexity.
+- A simple, scalable model performs best — ideal for production systems.
+
+- Simpler representations can outperform more complex weighting schemes and Small preprocessing decisions can meaningfully improve downstream accuracy
+
+##### These results highlight that preprocessing and representation choices had a greater impact on performance than increasing model complexity.
 
 ## 5️⃣ Business Impact
 
