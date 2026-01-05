@@ -92,18 +92,18 @@ These results highlight that preprocessing and representation choices had a grea
 ## 5️⃣ Business Impact
 
 From a business standpoint, this project demonstrates:
-* - Improved user experience, user insights and trust
+- Improved user experience, user insights and trust
 
-* - Reliable tone detection at scale
+- Reliable tone detection at scale
 
-* - Reduced downstream error propagation
+- Reduced downstream error propagation
 
-* - Lower moderation and review costs
+- Lower moderation and review costs
 
 At big tech scale platforms, even a 1–2% improvement in text interpretation accuracy can influence:
 
-* - Millions of content decisions
+- Millions of content decisions
 
-* - AI interaction quality
+- AI interaction quality
 
-* - Platform safety metrics
+- Platform safety metrics
